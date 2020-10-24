@@ -7,7 +7,305 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    
+    <div class="container-menu">
+     
+    </div>
+    <div class="container-status">
+        <span id="stap">Stap: 5</span>
+        <span id="time">Time: 30s</span>
+    </div>
+    <div class="container-game-field">
+    <table class="user">
+        <tr>
+            <td class="letters"></td>
+            <td class="letters">А</td>
+            <td class="letters">Б</td>
+            <td class="letters">В</td>
+            <td class="letters">Г</td>
+            <td class="letters">Д</td>
+            <td class="letters">Е</td>
+            <td class="letters">Ж</td>
+            <td class="letters">З</td>
+            <td class="letters">К</td>
+            <td class="letters">И</td>
+        </tr>
+        <tr >
+            <td class="digit">1</td>
+            <td id="000"></td>
+            <td id="001"></td>
+            <td id="002"></td>
+            <td id="003"></td>
+            <td id="004"></td>
+            <td id="005"></td>
+            <td id="006"></td>
+            <td id="007"></td>
+            <td id="008"></td>
+            <td id="009"></td>
+        </tr>
+        <tr>
+            <td class="digit">2</td>
+            <td id="010"></td>
+            <td id="011"></td>
+            <td id="012"></td>
+            <td id="013"></td>
+            <td id="014"></td>
+            <td id="015"></td>
+            <td id="016"></td>
+            <td id="017"></td>
+            <td id="018"></td>
+            <td id="019"></td>
+        </tr>
+        <tr>
+            <td class="digit">3</td>
+            <td id="020"></td>
+            <td id="021"></td>
+            <td id="022"></td>
+            <td id="023"></td>
+            <td id="024"></td>
+            <td id="025"></td>
+            <td id="026"><li class="miss-user"></li></td>
+            <td id="027"></td>
+            <td id="028"></td>
+            <td id="029"></td>
+        </tr>
+        <tr>
+            <td class="digit">4</td>
+            <td id="030"></td>
+            <td id="031"></td>
+            <td id="032"></td>
+            <td id="033"></td>
+            <td id="034"></td>
+            <td id="035"></td>
+            <td id="036"></td>
+            <td id="037"></td>
+            <td id="038"></td>
+            <td id="039"></td>
+        </tr>
+        <tr>
+            <td class="digit">5</td>
+            <td id="040"></td>
+            <td id="041"></td>
+            <td id="042"></td>
+            <td id="043"></td>
+            <td id="044"></td>
+            <td id="045"></td>
+            <td id="046"></td>
+            <td id="047"></td>
+            <td id="048"></td>
+            <td id="049"></td>
+        </tr>
+        <tr>
+            <td class="digit">6</td>
+            <td id="050"></td>
+            <td id="051"></td>
+            <td id="052"></td>
+            <td id="053"></td>
+            <td id="054"></td>
+            <td id="055"></td>
+            <td id="056"></td>
+            <td id="057"></td>
+            <td id="058"></td>
+            <td id="059"></td>
+        </tr>
+        <tr>
+            <td class="digit">7</td>
+            <td id="060"></td>
+            <td id="061"></td>
+            <td id="062"></td>
+            <td id="063"></td>
+            <td id="064"></td>
+            <td id="065"></td>
+            <td id="066"></td>
+            <td id="067"></td>
+            <td id="068"></td>
+            <td id="069"></td>
+        </tr>
+        <tr>
+            <td class="digit">8</td>
+            <td id="070"></td>
+            <td id="071"></td>
+            <td id="072"></td>
+            <td id="073"></td>
+            <td id="074"></td>
+            <td id="075"></td>
+            <td id="076" class="hit-user">╳</td>
+            <td id="077"></td>
+            <td id="078"></td>
+            <td id="079"></td>
+        </tr>
+        <tr>
+            <td class="digit">9</td>
+            <td id="080"></td>
+            <td id="081"></td>
+            <td id="082"></td>
+            <td id="083"></td>
+            <td id="084"></td>
+            <td id="085"></td>
+            <td id="086"></td>
+            <td id="087"></td>
+            <td id="088"></td>
+            <td id="089"></td>
+        </tr>
+        <tr>
+            <td class="digit">10</td>
+            <td id="090"></td>
+            <td id="091"></td>
+            <td id="092"></td>
+            <td id="093"></td>
+            <td id="094"></td>
+            <td id="095"></td>
+            <td id="096"></td>
+            <td id="097"></td>
+            <td id="098"></td>
+            <td id="099"></td>
+        </tr>
+    </table>
+    <table class="bot">
+        <tr>
+            <td class="letters"></td>
+            <td class="letters">А</td>
+            <td class="letters">Б</td>
+            <td class="letters">В</td>
+            <td class="letters">Г</td>
+            <td class="letters">Д</td>
+            <td class="letters">Е</td>
+            <td class="letters">Ж</td>
+            <td class="letters">З</td>
+            <td class="letters">К</td>
+            <td class="letters">И</td>
+        </tr>
+        <tr >
+            <td class="digit">1</td>
+            <td id="100"></td>
+            <td id="101"></td>
+            <td id="102"></td>
+            <td id="103"></td>
+            <td id="104"></td>
+            <td id="105"></td>
+            <td id="106"></td>
+            <td id="107"></td>
+            <td id="108"></td>
+            <td id="109"></td>
+        </tr>
+        <tr>
+            <td class="digit">2</td>
+            <td id="110"></td>
+            <td id="111"></td>
+            <td id="112"></td>
+            <td id="113"></td>
+            <td id="114"></td>
+            <td id="115"></td>
+            <td id="116"></td>
+            <td id="117"></td>
+            <td id="118"></td>
+            <td id="119"></td>
+        </tr>
+        <tr>
+            <td class="digit">3</td>
+            <td id="120"></td>
+            <td id="121"></td>
+            <td id="122"></td>
+            <td id="123"></td>
+            <td id="124"></td>
+            <td id="125"></td>
+            <td id="126"></td>
+            <td id="127"></td>
+            <td id="128"></td>
+            <td id="129"></td>
+        </tr>
+        <tr>
+            <td class="digit">4</td>
+            <td id="130"></td>
+            <td id="131"></td>
+            <td id="132"></td>
+            <td id="133"></td>
+            <td id="134"></td>
+            <td id="135" class="hit-bot">╳</td>
+            <td id="136"></td>
+            <td id="137"></td>
+            <td id="138"></td>
+            <td id="139"></td>
+        </tr>
+        <tr>
+            <td class="digit">5</td>
+            <td id="140"></td>
+            <td id="141"></td>
+            <td id="142"></td>
+            <td id="143"></td>
+            <td id="144"></td>
+            <td id="145"></td>
+            <td id="146"><li class="miss-bot"></li></td>
+            <td id="147"></td>
+            <td id="148"></td>
+            <td id="149"></td>
+        </tr>
+        <tr>
+            <td class="digit">6</td>
+            <td id="150"></td>
+            <td id="151"></td>
+            <td id="152"></td>
+            <td id="153"></td>
+            <td id="154"></td>
+            <td id="155"></td>
+            <td id="156"></td>
+            <td id="157"></td>
+            <td id="158"></td>
+            <td id="159"></td>
+        </tr>
+        <tr>
+            <td class="digit">7</td>
+            <td id="160"></td>
+            <td id="161"></td>
+            <td id="162"></td>
+            <td id="163"></td>
+            <td id="164"></td>
+            <td id="165"></td>
+            <td id="166"></td>
+            <td id="167"></td>
+            <td id="168"></td>
+            <td id="169"></td>
+        </tr>
+        <tr>
+            <td class="digit">8</td>
+            <td id="170"></td>
+            <td id="171"></td>
+            <td id="172"></td>
+            <td id="173"></td>
+            <td id="174"></td>
+            <td id="175"></td>
+            <td id="176"></td>
+            <td id="177"></td>
+            <td id="178"></td>
+            <td id="179"></td>
+        </tr>
+        <tr>
+            <td class="digit">9</td>
+            <td id="180"></td>
+            <td id="181"></td>
+            <td id="182"></td>
+            <td id="183"></td>
+            <td id="184"></td>
+            <td id="185"></td>
+            <td id="186"></td>
+            <td id="187"></td>
+            <td id="188"></td>
+            <td id="189"></td>
+        </tr>
+        <tr>
+            <td class="digit">10</td>
+            <td id="190"></td>
+            <td id="191"></td>
+            <td id="192"></td>
+            <td id="193"></td>
+            <td id="194"></td>
+            <td id="195"></td>
+            <td id="196"></td>
+            <td id="197"></td>
+            <td id="198"></td>
+            <td id="199"></td>
+        </tr>
+    </table>
+    </div>
 </body>
 <script src="script.js"></script>
 </html>
