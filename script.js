@@ -1,3 +1,18 @@
+import GridFieldCreater from './GridFieldCreater.js';
+import DirectionShotsAfterHits from './DirectionShotsAfterHits.js';
+
+//new GridFieldCreater('1');
+const a = new DirectionShotsAfterHits([0,1]);
+let b = new Array(1,2,3,4,5,6);
+console.log(a);
+// a.randomShot();
+// a.consoleDirection();
+// a.randomShot();
+// a.consoleDirection();
+// a.randomShot();
+// a.consoleDirection();;
+// a.randomShot();
+// a.consoleDirection();
 var model = {
  /* 
   хранение координат кораблей
@@ -88,8 +103,10 @@ var controller = {
 var bot = {
     shotsIntoShip: Number(0),
     lastShotId: 0,
+    idPossibleHits: 0,
     idLastShotHitsShip: [],
     idLastShotMissShip: [],
+    gridUserField: model.gridUserField,
     //gridUserField:
     shot: function(){
         //рандомный выстрел
@@ -100,12 +117,24 @@ var bot = {
             
         }
         //если уже есть попадания
-        else {
-
+        else if(this.shotsIntoShip === 1) {
+            this.idPossibleHits = new DirectionShotsAfterOneHit(this.lastShotId);
+            this.lastShotId = this.idPossibleHits.Shot();
+            model.doHitMiss(this.lastShotId);
+        }
+        else{
+            this.idPossibleHits = new DirectionShotsAfterHits
         }
         if(isHitMiss(this.lastShotId) === true){
+            //<- тест на потопление корабля ->
+            if(isShipSunk) {
+                this.shotsIntoShip = 0;
+                this.idLastShotHitsShip = [];
+            }
+            else{
             this.shotsIntoShip += 1;
             this.idLastShotHitsShip.push(this.lastShotId);
+            }
         }
 
         //isHitMiss(this.lastShotId) === true ? this.shotsIntoShip += 1 : this.shotsIntoShip = this.shotsIntoShip;
