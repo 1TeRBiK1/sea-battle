@@ -16,3 +16,5 @@ const symbolHit = '╳';
 //nameField
 const namePersonField = 'user';
 const nameBotField = 'bot';
+
+const timeoutBotMs = 3000; 
